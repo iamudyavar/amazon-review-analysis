@@ -6,7 +6,6 @@
 - Help customers make informed purchasing decisions by providing concise insights from a large volume of reviews.  
 
 ### **Scope**  
-#### *Limited prototype planned for the class*  
 - **Data Collection**: Gather Amazon reviews using pre-existing datasets or scraping methods.  
 - **Preprocessing**: Clean, tokenize, and normalize text data.  
 - **Summarization**: Implement extractive and/or abstractive summarization models, such as BERT, T5, or TextRank.  
