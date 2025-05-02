@@ -21,6 +21,11 @@
 
 ### Setup
 
+pip install pandas as pd
 pip install torch spacy
 python -m spacy download de_core_news_sm
 python -m spacy download en_core_web_sm
+
+### Acknowledgments
+
+This project uses the [Name-Gender-Predictor](https://github.com/imshibl/Name-Gender-Predictor) repository by [Imshibl](https://github.com/imshibl) for predicting gender from names.
