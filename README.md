@@ -71,11 +71,11 @@ AMAZON-REVIEW-ANALYSIS/
 
 ## Dataset
 
-We use the following dataset for 500K+ Amazon product reviews:  
+We used the following dataset which has 500K+ Amazon product reviews:  
 [Kaggle - Amazon Product Reviews](https://www.kaggle.com/datasets/arhamrumi/amazon-product-reviews)
 
 ---
 
 ## Acknowledgments
 
--   Gender prediction uses the [Name-Gender-Predictor](https://github.com/imshibl/Name-Gender-Predictor) by [Imshibl](https://github.com/imshibl)
+Gender prediction uses the [Name-Gender-Predictor](https://github.com/imshibl/Name-Gender-Predictor) by [Imshibl](https://github.com/imshibl)
