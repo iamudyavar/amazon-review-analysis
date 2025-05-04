@@ -23,14 +23,13 @@ This project performs structured analysis of Amazon product reviews. Given a **p
     -   Focuses on explainability over complexity
 
 -   **Gender Prediction**
-    -   Based on this rule:
-        > The gender of the reviewer is predicted based on their first name using a lookup-based model trained on common name-gender associations.
+    -   The gender of the reviewer is predicted based on their first name using a lookup-based model trained on common name-gender associations.
 
 ---
 
 ## Setup
 
-1. **Install dependencies**
+1. **Install dependencies (Python 3.12)**
 
 ```bash
 pip install -r requirements.txt
@@ -70,7 +69,7 @@ AMAZON-REVIEW-ANALYSIS/
 
 ## Dataset
 
-We use the following dataset for Amazon product reviews:  
+We use the following dataset for 500K+ Amazon product reviews:  
 [Kaggle - Amazon Product Reviews](https://www.kaggle.com/datasets/arhamrumi/amazon-product-reviews)
 
 ---
