@@ -49,6 +49,7 @@ parso==0.8.4
 pexpect==4.9.0
 pillow==11.2.1
 platformdirs==4.3.7
+plotly==6.0.1
 preshed==3.0.9
 prompt_toolkit==3.0.51
 psutil==7.0.0
@@ -75,6 +76,7 @@ spacy-legacy==3.0.12
 spacy-loggers==1.0.5
 srsly==2.5.1
 stack-data==0.6.3
+streamlit==1.45.0
 sympy==1.14.0
 thinc==8.3.6
 threadpoolctl==3.6.0
