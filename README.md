@@ -12,6 +12,8 @@ This project performs structured analysis of Amazon product reviews. Given a **p
 
 ## Core Architecture
 
+![Core Architecture](./assets/diagram.jpeg)
+
 -   **Custom Transformer**
 
     -   Implemented in PyTorch from the ground up
