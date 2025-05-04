@@ -27,6 +27,9 @@ This project performs structured analysis of Amazon product reviews. Given a **p
 -   **Gender Prediction**
     -   The gender of the reviewer is predicted based on their first name using a lookup-based model trained on common name-gender associations.
 
+-   **Main App GUI**
+    -   Application was implemented using Streamlit, version 1.45.0
+
 ---
 
 ## Setup
@@ -45,7 +48,13 @@ python -m spacy download en_core_web_sm
 
 3. **Run the project**
 
-Open and execute the notebook:
+Run the app with GUI:
+
+```bash
+streamlit run app.py
+```
+
+Or open and execute the notebook:
 
 ```bash
 review_analysis.ipynb
@@ -59,6 +68,7 @@ review_analysis.ipynb
 AMAZON-REVIEW-ANALYSIS/
 │
 ├── drafts/                    # Prototypes and exploratory scripts
+├── app.py                     # Main application
 ├── review_analysis.ipynb      # Main notebook
 ├── gender_predictor.pkl       # Gender prediction model
 ├── transformer_summarizer.pth # Our saved transformer-based summarization model
