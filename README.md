@@ -1,31 +1,80 @@
 # Amazon Review Analysis
 
-### **Overall Goal**
+## Project Overview
 
--   Develop an NLP model to automatically summarize Amazon product reviews and extract key points such as pros, cons, and sentiment.
--   Offer a clear and explainable summary, reducing information overload while maintaining review diversity.
--   Help customers make informed purchasing decisions by providing concise insights from a large volume of reviews.
+This project performs structured analysis of Amazon product reviews. Given a **product ID**, it retrieves and processes reviews to extract:
 
-### **Scope**
+-   A summary of review content
+-   Pros and cons using rule-based NLP
+-   Gender demographics of reviewers to help infer the product’s target audience
 
--   **Data Collection**: Gather Amazon reviews using pre-existing datasets or scraping methods.
--   **Preprocessing**: Clean, tokenize, and normalize text data.
--   **Summarization**: Implement extractive and/or abstractive summarization models, such as BERT, T5, or TextRank.
--   **Sentiment Analysis**: Use models such as VADER or TextBlob to determine review polarity.
--   **Pros/Cons Extraction**: Apply aspect-based sentiment analysis or keyword extraction to identify product strengths and weaknesses.
--   **Prototype Output**: A web app or extension showcasing summarized reviews, sentiment, and pros/cons.
+---
 
-### **Dataset**
+## Core Architecture
 
--   https://www.kaggle.com/datasets/kritanjalijain/amazon-reviews
+-   **Custom Transformer**
 
-### Setup
+    -   Implemented in PyTorch from the ground up
+    -   Includes positional encoding, multi-head attention, and scaled dot-product attention
 
-pip install pandas as pd
-pip install torch spacy
-python -m spacy download de_core_news_sm
+-   **Rule-Based Pros/Cons Extraction**
+
+    -   Uses part-of-speech tagging and simple heuristics
+    -   Focuses on explainability over complexity
+
+-   **Gender Prediction**
+    -   Based on this rule:
+        > The gender of the reviewer is predicted based on their first name using a lookup-based model trained on common name-gender associations.
+
+---
+
+## Setup
+
+1. **Install dependencies**
+
+```bash
+pip install -r requirements.txt
+```
+
+2. **Install spaCy English model**
+
+```bash
 python -m spacy download en_core_web_sm
+```
 
-### Acknowledgments
+3. **Run the project**
 
-This project uses the [Name-Gender-Predictor](https://github.com/imshibl/Name-Gender-Predictor) repository by [Imshibl](https://github.com/imshibl) for predicting gender from names.
+Open and execute the notebook:
+
+```bash
+review_analysis.ipynb
+```
+
+---
+
+## Folder Structure
+
+```
+AMAZON-REVIEW-ANALYSIS/
+│
+├── drafts/                    # Prototypes and exploratory scripts
+├── review_analysis.ipynb      # Main notebook
+├── gender_predictor.pkl       # Gender prediction model
+├── transformer_summarizer.pth # Our saved transformer-based summarization model
+├── requirements.txt           # Requirements
+├── Reviews.csv                # Dataset: Download from link provided below
+└── README.md
+```
+
+---
+
+## Dataset
+
+We use the following dataset for Amazon product reviews:  
+[Kaggle - Amazon Product Reviews](https://www.kaggle.com/datasets/arhamrumi/amazon-product-reviews)
+
+---
+
+## Acknowledgments
+
+-   Gender prediction uses the [Name-Gender-Predictor](https://github.com/imshibl/Name-Gender-Predictor) by [Imshibl](https://github.com/imshibl)
