@@ -646,8 +646,7 @@ def main():
             st.info("This product is **equally popular** among males and females.")
         else:
             st.info("This product is most popular among **males**.")
-        fig = px.pie(gender_df, names='Gender', values='Count', color_discrete_sequence=['#1f77b4', '#ff69b4'],
-                    title="Gender Distribution")
+        fig = px.pie(gender_df, names='Gender', values='Count', color='Gender', color_discrete_map={'Male': '#1f77b4', 'Female': '#ff69b4'}, title="Gender Distribution")
         st.plotly_chart(fig, use_container_width=True)
 
         # Pros and Cons
