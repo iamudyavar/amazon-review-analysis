@@ -10,6 +10,12 @@ This project performs structured analysis of Amazon product reviews. Given a **p
 
 ---
 
+## Demo Link
+
+[Demo Video]([url](https://www.youtube.com/watch?v=_jTdBLmkMC8))
+
+---
+
 ## Core Architecture
 
 ![Core Architecture](./assets/diagram.jpeg)
